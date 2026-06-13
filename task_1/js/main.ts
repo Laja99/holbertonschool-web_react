@@ -22,3 +22,21 @@ const teacher3: Teacher = {
 
 // Print the object to the console
 console.log(teacher3);
+
+// Define the Directors interface which extends Teacher
+// It adds a new mandatory property: numberOfReports
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+// Example usage of the Directors interface
+const director1: Directors = {
+  firstName: 'John',
+  lastName: 'Doe',
+  location: 'London',
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+
+// Print the director object to the console
+console.log(director1);
